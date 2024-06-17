@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 
 intents = discord.Intents.default()
-intents.message_content = True
+intents.message_content = True 
 
 bot = commands.Bot(command_prefix='$', intents=intents)
 
@@ -18,6 +18,5 @@ async def test(ctx, arg):
 
 with open('bot_token.txt', 'r') as file:
     TOKEN = file.read().strip()
-
 bot.run(TOKEN)
 
